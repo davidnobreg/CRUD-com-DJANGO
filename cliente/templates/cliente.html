@@ -18,7 +18,9 @@
                     {{field}}
                 </div>
                 {% endfor %}
-                <button type="submit" class="btn btn-primary w-100 mt-3">Salvar</button>
+                <button  type="submit" class="btn btn-success px-4 py-2 bg-green-500 text-white rounded-md hover:bg-blue-600">
+                  Salvar Cliente
+                </button>
             </form>
         </div>
         <!-- Imagem -->
@@ -55,10 +57,10 @@
                         <input type="text" name="email" value="{{ cliente.email }}" class="form-control">                        
                       </td>
                       <th class="border border-gray-300 ...">
-                          <input type="submit" value="Alterar" class="btn btn-warning"> 
+                          <input type="submit" value="Alterar" class="btn btn-primary px-4 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-600 ..."> 
                           
                         </form>
-                          <a href="{% url 'cliente-delete' cliente.id %}" class="btn btn-danger">Excluir</a>
+                          <a href="{% url 'cliente-delete' cliente.id %}" class="btn btn-danger px-4 py-2 bg-red-500 text-white rounded-md hover:bg-red-600 ...">Excluir</a>
                       </td>
                     </tr>
                   </tbody>
